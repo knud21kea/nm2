@@ -26,4 +26,4 @@
     <button on:click={logout}>Logout</button>
 {/if}
 
-<slot />
+<slot></slot>

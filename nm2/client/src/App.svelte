@@ -17,7 +17,7 @@
       <Link to="/signup">| SignUp</Link>
     {/if}
     {#if $user}
-      <Link to="/protected">| Restricted Area</Link>
+      <Link to="/protected">| Protected</Link>
     {/if}
   </nav>
 
