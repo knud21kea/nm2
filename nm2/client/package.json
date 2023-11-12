@@ -1,0 +1,22 @@
+{
+    "name": "nm2-client",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "devDependencies": {
+      "@sveltejs/vite-plugin-svelte": "^2.4.6",
+      "svelte": "^3.55.1",
+      "vite": "^4.2.0"
+    },
+    "dependencies": {
+      "svelte-navigator": "^3.2.2",
+      "svelte-use-form": "^2.6.2",
+      "toastr": "^2.1.4"
+    }
+  }
+  
