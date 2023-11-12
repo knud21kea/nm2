@@ -25,7 +25,7 @@ app.use(apiLimiter);
 
 import session from "express-session";
 app.use(session({
-    //secret: process.env.SESSION_SECRET,
+    //secret: process.env.SESSION_SECRET not working
     secret: "abcdefg",
     resave: false,
     saveUninitialized: true,
@@ -39,7 +39,7 @@ function restrictedAuthorizer(req, res, next) {
     next();
 }
 
-app.use("/restricted-area", restrictedAuthorizer);
+app.use("/protected", restrictedAuthorizer);
 
 app.get("*", (req, res) => {
     res.send("<h1>404 - Not Found</h1>")
