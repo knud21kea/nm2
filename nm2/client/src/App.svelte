@@ -6,7 +6,7 @@
     import Home from "./pages/Home/Home.svelte";
     import Login from "./pages/Login/Login.svelte";
     import Signup from './pages/SignUp/SignUp.svelte';
-    import RestrictedArea from "./pages/RestrictedArea/RestrictedArea.svelte";
+    import RestrictedArea from "./pages/Protected/Protected.svelte";
     
     </script>
     
