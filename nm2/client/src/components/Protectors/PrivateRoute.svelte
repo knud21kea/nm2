@@ -10,6 +10,6 @@
 
 <Route {path}>
     <PrivateRouteGuard {navigate} {location}>
-        <slot/>
+        <slot />
     </PrivateRouteGuard>
 </Route>

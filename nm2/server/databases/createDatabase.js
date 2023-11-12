@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 
 const isDeleteMode = process.argv.findIndex((arg) => arg === "delete") === -1 ? false : true;
 
-
 if (isDeleteMode) {
     await db.exec("DROP TABLE IF EXISTS users;");
 }
@@ -18,7 +17,6 @@ await db.exec(`CREATE TABLE IF NOT EXISTS users (
 
 
 // SEED the database (DML)
-
 const anniPw = await bcrypt.hash("anniCode", 12);
 const bibiPw = await bcrypt.hash("bibiCode", 12);
 const carlPw = await bcrypt.hash("carlCode", 12);

@@ -78,7 +78,7 @@
             bind:value={email}
             required
         />
-        <br>
+        <br />
         <input
             type="password"
             name="password"
@@ -86,9 +86,9 @@
             bind:value={password}
             required
         />
-        <br><br>
+        <br /><br />
         <button type="submit">Login</button>
-        <br><br>
+        <br /><br />
     </form>
 
     <form on:submit|preventDefault={sendResetEmail}>
@@ -99,7 +99,7 @@
             bind:value={recovery}
             required
         />
-        <br><br>
+        <br /><br />
         <button type="submit">I forgot my password</button>
     </form>
 </slot>

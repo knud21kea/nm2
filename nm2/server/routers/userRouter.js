@@ -45,7 +45,6 @@ router.post("/users/login", async (req, res) => {
     }
 
     res.status(200).send(req.session.user);
-
 })
 
 router.post("/users/createuser", async (req, res) => {
@@ -68,4 +67,3 @@ router.post("/users/createuser", async (req, res) => {
 })
 
 export default router;
-
