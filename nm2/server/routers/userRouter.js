@@ -2,7 +2,7 @@ import { Router } from "express";
 const router = Router();
 import db from "../databases/connection.js";
 import bcrypt from "bcrypt";
-import { resetPassword } from "../util/nodemailer.js";
+import { resetPassword } from "./util/nodemailer.js";
 
 router.get("/user/recovery", async (req, res) =>{
     const targetEmail = req.query.email;
